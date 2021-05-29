@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/skeleton.css"> 
     <link rel="stylesheet" href="css/style.css">
+   
 </head>
 <body>
 
@@ -57,6 +58,7 @@
 
 
     <div class="lista-p" class="container">
+        <form name="carreras" action="#">
         <h1 class="encabezado">Pregrados</h1>
 
         <div class="row">
@@ -67,7 +69,9 @@
                         <h4>Ingenieria en Sistemas</h4>
                         <img src="img/estrellas.png">
                         <p class="precio">$2.500.0004$ <span class="u-pull-right">2.300.000</span> </p>
-                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Inscribirse</a>
+                        <input type="checkbox" name="sistemas" value=" Sistemas 2.300.000" />
+                       
+                       
                     </div>
                 </div>
             </div>
@@ -78,7 +82,8 @@
                         <h4>Derecho</h4>
                         <img src="img/estrellas.png">
                         <p class="precio">$2.600.000<span class="u-pull-right">$2.100.000</span> </p>
-                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Inscribirse</a>
+                        <input type="checkbox" name="Derecho" value="Derecho 2.100.000" />
+                      
                     </div>
                 </div>
             </div>
@@ -89,15 +94,23 @@
                         <h4>Tecnologia en Redes de Datos</h4>
                         <img src="img/estrellas.png">
                         <p class="precio">$1.600.000<span class="u-pull-right">$1.100.000</span> </p>
-                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Inscribirse</a>
+                        <input type="checkbox" name="Tecnologia" value="Tecnologia 1.100.000"  />
+                        
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </form>
+
+    <div class="shop"><img src="IMG/cursos.jpg" width="300" height="300" alt=""></div>
+        <div id="cajaS1">
+
+        </div> 
+        <div> <input type="button" class="botoncompra" name="ver" value="Cursos en Compra" onclick="info()" /></div>
+        </div>
 
 
-
+        <script src="./compras.js"></script>
     <footer class="footer"> 
         <div class="container">
             <div class="row">
